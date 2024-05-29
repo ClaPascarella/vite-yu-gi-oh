@@ -1,17 +1,25 @@
-<script></script>
+<script>
+import CardList from "./CardList.vue";
+export default {
+    name: "AppMain",
+    components: {
+        CardList,
+    },
+};
+</script>
 
 <template>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 bg-warning" style="height: 100vh;">
-                <div class="container bg-white">
-                    <div class="col-12 d-flex justify-content-center mt-5">
-                        <div class="col-10 bg-dark text-white d-flex justify-content-center mt-3" style="height: 3rem;">
-                            ciao
-                        </div>
-                    </div>
-                </div>
+    <main>
+        <div class="fluid-container my_bg_orange p-5">
+            <div class="bg-white p-3 row">
+                <CardList />
             </div>
         </div>
-    </div>
+    </main>
 </template>
+
+<style scoped>
+.my_bg_orange {
+    background-color: #d48f38;
+}
+</style>
